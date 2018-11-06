@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Virtual Tutor Chat Ballons</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var instantiateTime = Date.now();   //date of today
+      //initialization of the unity plugin
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/virtualChatBallons.json", {onProgress: UnityProgress, Module: {
+          onRuntimeInitialized: function () {
+          var runtimeInitializedTime = Date.now();
+          console.log("Download+Instantiation time: " + (runtimeInitializedTime - instantiateTime) + " ms");
+          this.postRun.unshift(function () {
+            var engineInitializedTime = Date.now();
+            console.log("Engine initialization time: " + (engineInitializedTime - runtimeInitializedTime) + " ms");
+            console.log("Loading time: " + (engineInitializedTime - instantiateTime) + " ms");
+            setStuff();
+          });
+        },
+      }});
+
+      /*
+      get if tutor is open or closed
+      */
+      if (get('typeC')=="open") {
+        open();
+      } else{
+        close();
+      }
+
+      /*
+      collect the present URL of the page
+      */
+      function getURL(){
+        var b = window.location.href;
+        var f = b.split("/")[2];
+        return f;
+      }
+
+      /*
+      get the value of a specific given parameter
+      */
+      function get(name){
+        var url = window.location.search;
+        var num = url.search(name);
+        var namel = name.length;
+        var frontlength = namel+num+1; //length of everything before the value 
+        var front = url.substring(0, frontlength);  
+        url = url.replace(front, "");  
+        num = url.search("&");
+
+       if(num>=0) return url.substr(0,num); 
+       if(num<0)  return url;             
+      }
+
+      /*
+      send all the parameters to the tutor
+      */
+      function setStuff() {
+        var user = parseInt(get('iduser'));
+        var discipline = parseInt(get('iddiscipline'));
+        var teach = parseInt(get('teach'));
+        var url = "http://" + getURL() + "/moodleFCUL";
+
+        setTimeout(function () { 
+          gameInstance.SendMessage('moodleLogin', 'Get_userId', user);
+          gameInstance.SendMessage('moodleLogin', 'Get_courseId', discipline); 
+          gameInstance.SendMessage('moodleLogin', 'Get_t', teach); 
+          gameInstance.SendMessage('moodleLogin', 'changeLocation', url);
+          gameInstance.SendMessage('moodleLogin', 'makeConnection'); 
+        }, 3000);
+      }
+
+      function close(){
+        setTimeout(function () { 
+          gameInstance.SendMessage('Tutor Screen', 'closing');
+        }, 0);
+      }
+
+      function open(){
+        setTimeout(function () { 
+          gameInstance.SendMessage('Tutor Screen', 'Opening');
+        }, 0);
+      }
+    </script>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 437px; height: 399px"></div>
+    </div>
+  </body>
+</html>

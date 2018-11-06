@@ -1,0 +1,2715 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:tv_fev_puc="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#">
+    <Ontology rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+        <equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adquire_Competência -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adquire_Competência">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_da_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_da_Temática">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_AF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_da_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_realizada_por -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_realizada_por">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_AF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alterar_Tutor_Virtual -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alterar_Tutor_Virtual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos_chumbar -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos_chumbar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#cap_atribuído_Aluno -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#cap_atribuído_Aluno">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dispõe_de_CAP"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo_da_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tópicos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos_uc -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos_uc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competência_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competência_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Competência"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#consulta_Recursos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#consulta_Recursos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_AF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_AF">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pertence_a_PAF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Competência -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Competência">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Elementos_de_Avaliação -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Elementos_de_Avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_AC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_AC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Aluno-Professor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Aluno-Professor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Alunos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Alunos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_PAF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_PAF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Recursos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Recursos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Temática">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_e-fólio -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_e-fólio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_p-fólio_UC18 -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_p-fólio_UC18">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_Elementos_de_Avaliação -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_Elementos_de_Avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_e-fólio -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_e-fólio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_p-fólio_UC18 -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_próximo_p-fólio_UC18">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição_elementos_de_avaliação -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição_elementos_de_avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade_da_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#difícil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dispõe_de_CAP -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dispõe_de_CAP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#elementos_de_avaliação_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#elementos_de_avaliação_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar_e-fólios -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar_e-fólios">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estuda_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estuda_Temática">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#faz_Avaliação_Contínua -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#faz_Avaliação_Contínua">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dispõe_de_CAP"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_Elementos_de_Avaliação"/>
+                <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minQualifiedCardinality>
+                <onClass rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequentada_por_Estudante"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequentada_por_Estudante -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequentada_por_Estudante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_AC_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_AC_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_AC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Aluno-Professor_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Aluno-Professor_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Aluno-Professor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Alunos_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Alunos_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Alunos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_AF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_AF">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Aluno-Professor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_Temática">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Alunos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_e-fólio -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_e-fólio">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_AC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas_para_estudar -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas_para_estudar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_AF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_AF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_AC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_AC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Aluno-Professor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Aluno-Professor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Alunos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#inclui_Fórum_Alunos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material_adicional -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material_adicional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria_p-fólio -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria_p-fólio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modera_Fórum_Aluno-Professor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modera_Fórum_Aluno-Professor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar_Tutor_Virtual -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar_Tutor_Virtual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_modelo -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_modelo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_AC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_AC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Aluno-Professor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Aluno-Professor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Alunos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Alunos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pertence_a_PAF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pertence_a_PAF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pfa_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pfa_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PAF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PUC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_AF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_AF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_Elementos_de_Avaliação -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_Elementos_de_Avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#recursos_da_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#recursos_da_Temática">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <rdfs:comment>não sei se cada temática terá um recursos específico, e consequantemente cada actividade formativa</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#recursos_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#recursos_da_UC">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Recursos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_CAP -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_CAP">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Competência -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Competência">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Docente -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Docente">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_UC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Elementos_de_Avaliação -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Elementos_de_Avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_AC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_AC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Aluno-Professor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Aluno-Professor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Alunos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Alunos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PAF -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PAF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PUC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PUC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Recursos -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Recursos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Temática -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Temática">
+        <inverseOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#temática_da_UC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#temática_da_UC -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#temática_da_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#apelido -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#apelido">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#calendário -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#calendário"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#classificação -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#classificação">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#código_UC -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#código_UC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>saber se é composto por só por números ou se tem tb letras</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_de_realização -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_de_realização">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#calendário"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_fim -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_fim">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#calendário"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_início -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data_início">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#calendário"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-mail -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-mail">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Elementos_de_Avaliação -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Elementos_de_Avaliação">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Pessoas"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#nome_próprio -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#nome_próprio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#número_ID_Docente -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#número_ID_Docente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#número_ID_Estudante -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#número_ID_Estudante">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Pessoais"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ponderação -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ponderação">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#informações_Elementos_de_Avaliação"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pontos_no_cartão_de_aprendizagem -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#pontos_no_cartão_de_aprendizagem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Avaliação_por_Exame -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Avaliação_por_Exame"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Bibliografia_Complementar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Bibliografia_Complementar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Bibliografia_Obrigatória -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Bibliografia_Obrigatória">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Cartão_de_Aprendizagem">
+        <rdfs:isDefinedBy>O Cartão de Aprendizagem do estudante (CAP) baseia-se na metáfora do “cartão de crédito” e tem como objectivo fundamental valorizar o percurso pessoal de aprendiza- gem do estudante. Trata-se de um dispositivo electrónico personalizado e que traduz os resultados dos produtos elaborados pelo estudante, no decurso do processo de apren- dizagem, configurando um sistema organizado de avaliação das aprendizagens.</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Docente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Pessoas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Estudante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Pessoas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Aluno-Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Avaliação_Contínua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Outros_Recursos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Outros_Recursos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Pessoas -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Pessoas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF">
+        <rdfs:comment>sob que formato vem a informação sobre a natureza e objectivos do Plano de Actividades Formativas
+proposto para a Unidade Curricular.
+
+o plano não será composto por diferentes actividades formativas, com os respectivos enunciados/objectivos, e período de realização.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC">
+        <rdfs:isDefinedBy xml:lang="pt">O PUC constitui um documento que visa orientar o processo de aprendizagem do estudante ao longo da Unidade Curricular a que se refere. É por isso um guião que requer uma leitura atenta e que lhe será útil ao longo de todo o percurso de aprendizagem.</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#difícil -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#difícil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#exame -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#exame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tópicos -->
+
+    <Class rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tópicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <tv_fev_puc:af_da_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1"/>
+        <tv_fev_puc:af_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:inclui_Fórum_Aluno-Professor rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas1"/>
+        <tv_fev_puc:pertence_a_PAF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PAF1"/>
+        <rdfs:isDefinedBy>objectivo da AF</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <tv_fev_puc:af_da_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema2"/>
+        <tv_fev_puc:af_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:inclui_Fórum_Aluno-Professor rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF3 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Actividade_Formativa"/>
+        <tv_fev_puc:af_da_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema3"/>
+        <tv_fev_puc:af_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Aluno1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Aluno1">
+        <tv_fev_puc:dispõe_de_CAP rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#CAP1"/>
+        <tv_fev_puc:frequenta_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:apelido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salgueiro</tv_fev_puc:apelido>
+        <tv_fev_puc:e-mail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a.marisa@campus.ul.pt</tv_fev_puc:e-mail>
+        <tv_fev_puc:nome_próprio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana</tv_fev_puc:nome_próprio>
+        <tv_fev_puc:número_ID_Estudante rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">12014</tv_fev_puc:número_ID_Estudante>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Book1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Book1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+        <tv_fev_puc:recursos_da_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1"/>
+        <tv_fev_puc:recursos_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <rdfs:comment>forma de acesso</rdfs:comment>
+        <rdfs:isDefinedBy>título do livro/recurso bibliográfico</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Book2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Book2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Recursos_de_Aprendizagem"/>
+        <tv_fev_puc:recursos_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#CAP1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#CAP1">
+        <tv_fev_puc:pontos_no_cartão_de_aprendizagem rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</tv_fev_puc:pontos_no_cartão_de_aprendizagem>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+        <tv_fev_puc:competência_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <rdfs:isDefinedBy xml:lang="pt">definição da competência a adquirir</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+        <tv_fev_puc:competência_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <rdfs:isDefinedBy>definição da competência a adquirir</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência3 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competências"/>
+        <tv_fev_puc:competência_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+        <rdfs:isDefinedBy>Teste</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_AC_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <rdfs:isDefinedBy>instruções para execução de e-fólio</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_AC_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_Aluno-Professor_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:fórum_sobre_AF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF1"/>
+        <rdfs:isDefinedBy>Fórum para esclarecer dúvidas sobre Actividade formativa 1</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_Aluno-Professor_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_Alunos_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:fórum_sobre_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1"/>
+        <rdfs:isDefinedBy>objectivo do fórum 1</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum"/>
+        <tv_fev_puc:fórum_Alunos_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PAF1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PAF1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_AF"/>
+        <rdfs:comment>link do PAF</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC1">
+        <tv_fev_puc:contém_Competência rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência1"/>
+        <tv_fev_puc:contém_Competência rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência2"/>
+        <tv_fev_puc:contém_Elementos_de_Avaliação rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioA"/>
+        <tv_fev_puc:contém_Elementos_de_Avaliação rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioB"/>
+        <tv_fev_puc:contém_Fórum_AC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC1"/>
+        <tv_fev_puc:contém_Fórum_Aluno-Professor rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_Dúvidas1"/>
+        <tv_fev_puc:contém_Fórum_Alunos rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos1"/>
+        <tv_fev_puc:contém_PAF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PAF1"/>
+        <tv_fev_puc:contém_Recursos rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Book1"/>
+        <tv_fev_puc:contém_Temática rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1"/>
+        <rdfs:comment>link do PUC</rdfs:comment>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Plano_UC"/>
+        <tv_fev_puc:contém_Competência rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Competência3"/>
+        <tv_fev_puc:plano_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Professor1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Professor1">
+        <tv_fev_puc:apelido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balsa</tv_fev_puc:apelido>
+        <tv_fev_puc:e-mail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jbalsa@ciencias.ulisboa.pt</tv_fev_puc:e-mail>
+        <tv_fev_puc:nome_próprio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">João</tv_fev_puc:nome_próprio>
+        <tv_fev_puc:número_ID_Docente rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2657</tv_fev_puc:número_ID_Docente>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <tv_fev_puc:inclui_AF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF1"/>
+        <tv_fev_puc:inclui_Fórum_Alunos rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos1"/>
+        <tv_fev_puc:temática_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:data_fim rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-03-20T00:00:00Z</tv_fev_puc:data_fim>
+        <tv_fev_puc:data_início rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-20T00:00:00Z</tv_fev_puc:data_início>
+        <rdfs:isDefinedBy>objectivo do tema</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <tv_fev_puc:inclui_AF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF2"/>
+        <tv_fev_puc:inclui_Fórum_Alunos rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_de_Alunos1"/>
+        <tv_fev_puc:temática_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema3 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tema3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Conteúdos_Temáticos"/>
+        <tv_fev_puc:inclui_AF rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#AF3"/>
+        <tv_fev_puc:temática_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+        <rdfs:isDefinedBy>TESTE2</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <tv_fev_puc:tem_Docente rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Professor1"/>
+        <tv_fev_puc:tem_PUC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC1"/>
+        <tv_fev_puc:código_UC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98354</tv_fev_puc:código_UC>
+        <rdfs:isDefinedBy>sinopse da UC</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <tv_fev_puc:tem_PUC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#PUC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_curricular -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_curricular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+        <rdfs:isDefinedBy>A unidade curricular de ...</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adicional -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adicional"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alterar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alterar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_p-fólio -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_p-fólio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#anos_anteriores"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:ano_passado rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:anos_anteriores rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <rdfs:isDefinedBy>De momento não se encontra nenhum disponivel. Quando se encontrarem disponiveis estaram na ...</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#ano_passado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tópicos"/>
+        <tv_fev_puc:capítulo_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#capítulos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tópicos"/>
+        <tv_fev_puc:capítulo_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#reprovar"/>
+        <tv_fev_puc:alunos_chumbar rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos_UC -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos_UC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alunos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar"/>
+        <tv_fev_puc:chumbar_alunos_uc rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos"/>
+        <rdfs:isDefinedBy>Não, mas mas é necessário trabalho para conseguir finalizar a Unidade Curricular</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#def_UC -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#def_UC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+        <tv_fev_puc:definição_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição"/>
+        <rdfs:isDefinedBy>Uma UC ou unidade curricular, ....</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#def_elementos_de_avaliação -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#def_elementos_de_avaliação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+        <tv_fev_puc:definição_elementos_de_avaliação rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição"/>
+        <rdfs:isDefinedBy>Um elemento de avaliação é ....</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definição">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#definições"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dia -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade_da_UC -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade_da_UC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Unidade_Curricular"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#difícil"/>
+        <tv_fev_puc:dificuldade_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <tv_fev_puc:data_próximo_e-fólio rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo"/>
+        <rdfs:isDefinedBy>O e-fólio será no dia 30 de Outubro de 2018</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <tv_fev_puc:data_próximo_e-fólio rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo"/>
+        <rdfs:isDefinedBy>O e-fólio será no dia 29 de Outubro de 2018</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio3 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <tv_fev_puc:data_próximo_e-fólio rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo"/>
+        <rdfs:isDefinedBy>O e-fólio será no dia 7 de Novembro de 2018</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioA -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <tv_fev_puc:elementos_de_avaliação_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:inclui_Fórum_AC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC1"/>
+        <tv_fev_puc:classificação rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</tv_fev_puc:classificação>
+        <tv_fev_puc:data_fim rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-20T00:00:00Z</tv_fev_puc:data_fim>
+        <tv_fev_puc:data_início rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-20T00:00:00Z</tv_fev_puc:data_início>
+        <tv_fev_puc:ponderação rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tv_fev_puc:ponderação>
+        <rdfs:isDefinedBy>enunciado do e-fólio A</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioB -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <tv_fev_puc:elementos_de_avaliação_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:inclui_Fórum_AC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Fórum_AC1"/>
+        <rdfs:isDefinedBy>enunciado do efólio B</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioC -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólioC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <tv_fev_puc:elementos_de_avaliação_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar_e-fólio -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar_e-fólio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#entregar"/>
+        <tv_fev_puc:entregar_e-fólios rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#e-fólio"/>
+        <rdfs:isDefinedBy>Sim, é obrigatório a entrega dos e-fólios pois estes contam para a avaliação contínua.</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas_para_estudar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas_para_estudar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas"/>
+        <tv_fev_puc:horas_para_estudar rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+        <tv_fev_puc:horas_para_estudar rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material_adicional -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material_adicional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estudar"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material"/>
+        <tv_fev_puc:material_adicional rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adicional"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria_p-fólio -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria_p-fólio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:matéria_p-fólio rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar_de_Tutor_Virtual -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar_de_Tutor_Virtual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Tutor_Virtual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar"/>
+        <tv_fev_puc:alterar_Tutor_Virtual rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#alterar"/>
+        <tv_fev_puc:alterar_Tutor_Virtual rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#mudar"/>
+        <rdfs:isDefinedBy>De momento a funcionalidade de alteração do tutor virtual não se encontra implementada.</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_UC1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_UC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:elementos_de_avaliação_da_UC rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#UC1"/>
+        <tv_fev_puc:classificação rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</tv_fev_puc:classificação>
+        <tv_fev_puc:data_de_realização rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-20T00:00:00Z</tv_fev_puc:data_de_realização>
+        <tv_fev_puc:ponderação rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tv_fev_puc:ponderação>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_UC18 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_UC18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:data_p-fólio_UC18 rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#data"/>
+        <tv_fev_puc:data_p-fólio_UC18 rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dia"/>
+        <tv_fev_puc:data_próximo_p-fólio_UC18 rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo"/>
+        <tv_fev_puc:data_próximo_p-fólio_UC18 rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximos"/>
+        <rdfs:isDefinedBy>O p-fólio será no dia 23 de Outubro de 2018</rdfs:isDefinedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_modelo -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_modelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#Elementos_de_Avaliação"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio"/>
+        <tv_fev_puc:p-fólio_modelo rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modelo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximos -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#próximos"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#chumbar_alunos">
+        <rdfs:isDefinedBy>chumbar_alunos</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#dificuldade_da_UC">
+        <rdfs:isDefinedBy>Não, mas mas é necessário trabalho para conseguir finalizar a Unidade Curricular</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#horas_para_estudar">
+        <rdfs:isDefinedBy>Deve estudar x horas de forma a concluir esta Unidade Curricular com sucesso.</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#material_adicional">
+        <rdfs:isDefinedBy>Não, o material presente na página é suficiente para estudar, mas poderá sempre procurar por mais caso seja necessário.</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#matéria_p-fólio">
+        <rdfs:isDefinedBy>A matéria que sai no p-fólio é a seguinte: ...</rdfs:isDefinedBy>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#p-fólio_modelo">
+        <rdfs:isDefinedBy>De momento não existe nenhum p-fólio modelo, quando existir irá estar presente na ..</rdfs:isDefinedBy>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Competência"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#competência_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_AF"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_AF"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Aluno-Professor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_e-fólio"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_Elementos_de_Avaliação"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_AC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Docente"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Fórum_Aluno-Professor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#modera_Fórum_Aluno-Professor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Elementos_de_Avaliação"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Elementos_de_Avaliação"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_AC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_AC_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#af_da_Temática"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estuda_Temática"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_AF"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Aluno-Professor"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Aluno-Professor_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Fórum_Alunos"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_Alunos_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_PAF"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_PAF"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Recursos"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#recursos_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#contém_Temática"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#plano_da_UC"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#temática_da_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estuda_Temática"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#fórum_sobre_Temática"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#z"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#participa_em_Fórum_Alunos"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Competência"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#adquire_Competência"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Elementos_de_Avaliação"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#realiza_Elementos_de_Avaliação"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Recursos"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#consulta_Recursos"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#frequenta_UC"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#tem_Temática"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/albertosalgueiro/ontologies/2018/1/TV_fev_PUC#estuda_Temática"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

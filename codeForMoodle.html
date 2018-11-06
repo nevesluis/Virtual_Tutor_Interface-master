@@ -1,0 +1,172 @@
+<div id="divava" style="background-color: #B0C4DE; position: fixed; z-index: 2; bottom:-4.20%; margin-left:-12.6%;">
+<script type="text/javascript"> 
+
+var linkMoodle = 'http://' + getURL() + '/';
+
+function getURL(){
+  var b = window.location.href;
+  var f = b.split("/")[2];
+  return f;
+}
+
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+if(x<682 && y<=643){
+   document.getElementById("divava").style = "background-color: #B0C4DE; position: fixed; z-index: 2; bottom:-4.5%; margin-left:28.25%;";
+}
+
+if(x<959 && y>=662){
+   document.getElementById("divava").style = "background-color: #B0C4DE; position: fixed; z-index: 2; bottom:-3%; margin-left:49%;";
+}
+
+if(x>1366 && y>662){
+   document.getElementById("divava").style = "background-color: #B0C4DE; position: fixed; z-index: 2; bottom:-3%; margin-left:-8.90%;";
+}
+
+var small=false;
+function toggle()
+{
+    if(small){
+      document.getElementById('virtualTutor').contentWindow.open();
+      document.getElementById('virtualTutor').width = 429;
+      document.getElementById('virtualTutor').height = 410;
+      document.getElementById('toggle').innerHTML= "<img src='" + linkMoodle + "virtualChatBallons/close.png' alt='Fechar' width='20' height='20'>";
+      small=false;
+      first = false;
+    }
+    else{
+      document.getElementById('virtualTutor').contentWindow.close();
+      cl();
+      small=true;
+    }
+}
+
+function cl(){
+   setTimeout(function () { 
+      document.getElementById('virtualTutor').width = 429;
+      document.getElementById('virtualTutor').height = 1;
+      document.getElementById('toggle').innerHTML= "<img src='" + linkMoodle + "virtualChatBallons/open.png' alt='Abrir' width='20' height='20'>";
+    }, 3000);
+}
+</script>
+<p>
+<span style="font-size: 1rem;"></span>
+</p>
+<button id="toggle" onclick="toggle()" style="align:right;" width="20" height="20"><img src="http://ec2-34-244-90-101.eu-west-1.compute.amazonaws.com/virtualChatBallons/close.png" alt="Fechar" width="20" height="20"></button>Tutor Virtual (Avatar)<br>
+<iframe id="virtualTutor" src="http://ec2-34-244-90-101.eu-west-1.compute.amazonaws.com/virtualChatBallons/index.html" style="border 0px;" name="Virtual Tutor" scrolling="no" frameborder="0" height="410px" width="429px"></iframe>
+<p></p>
+</div>
+<script type="text/javascript">
+
+document.getElementById('toggle').innerHTML= "<img src='" + linkMoodle + "virtualChatBallons/close.png' alt='Abrir' width='20' height='20'>";
+
+function getByClass (className, parent) {
+  parent || (parent=document);
+  var descendants=parent.getElementsByTagName('*'), i=-1, e, result=[];
+  while (e=descendants[++i]) {
+    ((' '+(e['class']||e.className)+' ').indexOf(' '+className+' ') > -1) && result.push(e);
+  }
+  return result;
+}
+
+function getUser(){
+  var node = getByClass('usermenu')[0];
+  var hrefs;
+  var nodeD = node.innerHTML.split('<a href="'), i=-1, n;
+  while(n = nodeD[++i]){
+       if(n.indexOf(linkMoodle + 'moodleFCUL/user/profile.php?id=') != -1) {
+         hrefs = n.split('"');
+       }
+   }
+  return hrefs[0].split(linkMoodle + 'moodleFCUL/user/profile.php?id=')[1];
+}
+
+function getTeacher(){
+  var list = getByClass('pull-xs-right context-header-settings-menu')[0];
+  if(list.innerHTML!=""){
+    return 0;
+  }
+  return 1;
+}
+
+function getDiscipline(){
+  var list = document.getElementsByTagName("ol")[0].innerHTML;
+  var list2 = list.split("href="), n, i=-1;
+  while(n = list2[++i]){
+       if(n.indexOf(linkMoodle + 'moodleFCUL/course/view.php?id=') != -1) {
+         hrefs = n.split('"');
+       }
+   }
+  return hrefs[1].split(linkMoodle + 'moodleFCUL/course/view.php?id=')[1];
+}
+
+var link = linkMoodle + "virtualChatBallons/index.html?iduser=" + getUser() + "&iddiscipline=" + getDiscipline() + "&teach=" + getTeacher();
+
+document.getElementById("virtualTutor").src = link;
+
+function getElemPage(name){
+   var e = document.getElementById(name);
+   if(e==null){
+    e = document.querySelector('[aria-label="' + name + '"]');
+   }
+   return e;
+}
+
+var element = '', colorA = '';
+
+function goTo(node, yourHeight){
+  if (node != null) {
+    // scroll to your element
+    node.scrollIntoView(true);
+
+    // now account for fixed header
+    var scrolledY = window.scrollY;
+
+    if(scrolledY){
+      window.scroll(0, scrolledY - yourHeight);
+      colorA = node.style.outline;
+      node.style.outline = '#f00 solid 2px';
+      setTimeout(function () { 
+        node.style.outline = colorA;
+      }, 12000);
+      //node.style.outline = colorB;
+    }
+  } else {
+    window.alert("error: not found");
+  }
+}
+
+function getTopic(name){
+   var e = document.getElementById(name);
+   if(e==null){
+    e = document.querySelector('[aria-label="' + name + '"]');
+   }
+   goTo(e, 50);
+}
+
+function goToGradeReport(){
+  var idd = getDiscipline();
+  window.open(linkMoodle + 'moodleFCUL/grade/report/user/index.php?id=' + idd,"_self");
+}
+
+function getAF(name){
+  var list = getByClass('activityinstance');
+  var e;
+  if(name!=null){
+    for (var i = list.length - 1; i >= 0; i--) {
+      if (list[i].innerHTML.includes(name)) {
+        e = list[i];
+      }
+    }
+    goTo(e,50);
+  } else {
+    window.alert("não há nome");
+  }
+}
+
+</script>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EFoliosBox" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAgAAAAgAAgAAAAAQAAAAACAAAA=</HashCode>
+      <FileName>Assets\EFoliosBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstScreen" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAAAAAAAEABAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\FirstScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InitialScreen" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARwAAAAACBABIEAAAAAAAAAAABAAgAAAAQgAAAAASA=</HashCode>
+      <FileName>Assets\InitialScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MessageFuntions" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgBEgAGAAAAkAAAAAAAAAAAIAAIAQAYBAABAiA=</HashCode>
+      <FileName>Assets\MessageFuntions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AvatarController">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAABAACAABAAAAAgAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyDidimoAvatar\Scripts\AvatarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QeAFunctions" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAACAAAAAAAAAAAAAAAAAAQAAEQEAAAACAQAA=</HashCode>
+      <FileName>Assets\QeAFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Screens" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAACBAAIAAAAAAAAAAAAAAAAABQAAABAEAESA=</HashCode>
+      <FileName>Assets\Screens.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAvatar">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ControlAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TopicFunctions" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAABAAAAAAAAlAQAAAAAAAEAIAAAAAAAAAABACA=</HashCode>
+      <FileName>Assets\TopicFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TopicsFunctions" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAhAAAABAAAAAAAAAAABABAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\TopicsFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TutorScreen" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBQUACkBCOhzoc5KFuzuaYQJoOUoyqBUXcYFAALAEWc=</HashCode>
+      <FileName>Assets\TutorScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="databaseConnections">
+    <Position X="17.25" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="databaseConnections.Values" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\WebCommunication\Scripts\Comunication\databaseConnections.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQIAAAQACACAAAAAAAAAAAGABIAIAIAJJACAAAABQA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\Comunication\databaseConnections.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebserviceLogin" Collapsed="true">
+    <Position X="14.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQUSAAICOEgEAAAgSKIAAIAkCEiARADAIIQAyCIHpA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\Comunication\WebserviceLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataManager" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAABAACIKQAAAABEAAAhAAAIgAAAAEAAAABQCgQA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\DataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="jsonValues" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\jsonValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebManager" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DNQICDgAgCAhgBIECABogwEEABDCQALw4BgMCgEBFgA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\WebManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInfo.Course" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aEGAQAAAEqAAAKAUDESBDMCIBpASCAAQoyOgqCTDuxs=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\Data Retrieved\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInfo.Notes" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgACAAAAAAAAAAAAAAQAIAABBEAAAAAQAgAAA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\Data Retrieved\Notes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserInfo.UserData" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAIACAAAIAwAAGgAQAAAAAAAAAACQEAAAUAAgA=</HashCode>
+      <FileName>Assets\WebCommunication\Scripts\Data Retrieved\UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MoodState" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgABAAgAAA=</HashCode>
+      <FileName>Assets\MyDidimoAvatar\Scripts\MoodState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ExpressionState" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AyQAAAAAAAAFAAAAYAAACAAEAgAAAAEAAggARABgAgA=</HashCode>
+      <FileName>Assets\MyDidimoAvatar\Scripts\MoodState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
